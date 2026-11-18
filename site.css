@@ -336,7 +336,7 @@ article.sample .ch + .ch {
   border-top: 1px solid var(--accent-line);
 }
 
-article.sample h1 {
+article.sample h2 {
   font-family: var(--mono);
   font-size: 1.55rem;
   font-weight: 500;
@@ -345,7 +345,7 @@ article.sample h1 {
   margin: 0 0 1.15em;
 }
 
-article.sample h1 .chn {
+article.sample h2 .chn {
   display: block;
   font-size: 0.72rem;
   font-weight: 500;
@@ -355,7 +355,7 @@ article.sample h1 .chn {
   margin: 0 0 0.45em;
 }
 
-article.sample h1 .cht {
+article.sample h2 .cht {
   display: block;
 }
 
@@ -524,3 +524,16 @@ article.sample .nb {
   font-style: italic;
 }
 .sample blockquote p { margin: 0 0 0.5rem; }
+
+/* visually hidden, still read by crawlers and screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
