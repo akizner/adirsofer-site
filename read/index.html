@@ -34,6 +34,34 @@
   <meta name="twitter:image" content="https://adirsofer.com/og.png">
   <meta name="twitter:image:alt" content="Load Shed, a techno-thriller by Adir Sofer. Title over an amber 50 Hz sine wave on a dark grid background.">
   <link rel="stylesheet" href="/site.css">
+  <style>
+    article.sample sup { line-height: 0; }
+    article.sample a.footnote-ref {
+      font-family: var(--mono);
+      font-size: 0.72em;
+      color: var(--accent);
+      text-decoration: none;
+      padding: 0 0.2em;
+      border-bottom: 1px solid var(--accent-line);
+    }
+    article.sample a.footnote-ref:hover,
+    article.sample a.footnote-ref:focus-visible,
+    article.sample a.footnote-backref:hover,
+    article.sample a.footnote-backref:focus-visible { border-bottom-color: var(--accent); outline: none; }
+    article.sample .notes {
+      margin-top: 3rem;
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      line-height: 1.55;
+      color: var(--ink-dim);
+    }
+    article.sample .notes hr { margin: 0 0 1em; width: 30%; margin-left: 0; }
+    article.sample .notes ol { margin: 0; padding-left: 1.5em; }
+    article.sample .notes li { margin: 0 0 0.35em; }
+    article.sample .notes li p { margin: 0; }
+    article.sample .notes a.footnote-backref { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+    article.sample li:target { color: var(--ink); }
+  </style>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -146,7 +174,7 @@
 <h2 id="ch1-title"><span class="chn">Chapter 1</span> <span class="cht">The Shed</span></h2>
 <p><em>Day 1 · Tuesday</em></p>
 <p>Frequency was at 49.94.</p>
-<p>Outside the sealed glass, the sharav still pressed on the building. Day four, <span class="nb">forty-one</span> degrees that afternoon. Inside, the thermos had given up an hour ago. Dana tipped it anyway and set it back on the blotter, on its brown continent of rings.</p>
+<p>Outside the sealed glass, the sharav<sup id="fnref:gl-sharav"><a class="footnote-ref" role="doc-noteref" href="#fn:gl-sharav">1</a></sup> still pressed on the building. Day four, <span class="nb">forty-one</span> degrees that afternoon. Inside, the thermos had given up an hour ago. Dana tipped it anyway and set it back on the blotter, on its brown continent of rings.</p>
 <p>On the wall, the synoptic map of the island glowed red. Red on the <span class="nb">four-hundred-kilovolt</span> spine. Amber crawling up the 161s. A thin green ribbon of spinning reserve ran along the bottom.</p>
 <p>Two hundred fourteen megawatts of spinning spare, on a night when the country wanted roughly <span class="nb">twenty-one</span> thousand.</p>
 <p>“Solar’s rolling off,” Yuval said from the next console. He was <span class="nb">twenty-nine</span>. “Coastal solar farms down another <span class="nb">three-eighty</span> in the last twenty minutes. Negev’s not far behind.”</p>
@@ -162,14 +190,14 @@
 <p>The dangerous hour was now: sun gone, AC still roaring. Batteries were discharging on schedule. Twenty minutes of useful courage at this rate.</p>
 <p>The contingency ladder had no soft rungs left: alerts, appeals, chargers, interruptibles, all done.</p>
 <p>49.92.</p>
-<p>“<span class="nb">EEA-2</span>,” said the shift supervisor from the back rail—Ronen Aloni, <span class="nb">fifty-three</span>, a smoker’s voice. Energy emergency alert level two—rotating shed. “Public message went out at nineteen ten. <span class="nb">Large-load</span> interruptibles acknowledged. Orion’s <span class="nb">thirty-eight</span> are still on—Amendment 14 only opens them at <span class="nb">EEA-3</span>. We’re still short.”</p>
+<p>“<span class="nb">EEA-2</span>,” said the shift supervisor from the back rail—Ronen Aloni, <span class="nb">fifty-three</span>, a smoker’s voice. Energy emergency alert level two—rotating shed. “Public message went out at nineteen ten. <span class="nb">Large-load</span> interruptibles acknowledged. Orion’s <span class="nb">thirty-eight</span> interruptible megawatts are still on—Amendment 14 only opens them at <span class="nb">EEA-3</span>. We’re still short.”</p>
 <p>“How short.”</p>
 <p>“<span class="nb">Three-ten</span>, <span class="nb">three-twenty</span>, depending whose forecast you trust.”</p>
 <p>Dana trusted the one that was already wrong. The EMS deficit ribbon had been painting orange since eighteen forty. The island had no neighbor to lean on. Tonight the eastern corridor was a line on a map.</p>
 <p>Her phone buzzed against the console. Looking was how you missed a tenth of a hertz.</p>
-<p>Yuval wiped his hands on his pants. “RoCoF’s picking up.”</p>
+<p>Yuval wiped his hands on his pants. “RoCoF’s picking up.” The rate of change, how fast the frequency was falling.</p>
 <p>“I see the slide, thank you.”</p>
-<p>The relays were in substations all over the country. Stage 1 armed at 49.0. If the island fell that far, they would open feeders before anyone asked her, skip Schedule 1, and ignore which street sat on which transformer. Manual shed existed for exactly this reason.</p>
+<p>The relays were in substations all over the country. The first relay stage armed at 49.0. If the island fell that far, they would open feeders before anyone asked her, skip Schedule 1, and ignore which street sat on which transformer. Manual shed existed for exactly this reason.</p>
 <p>On the <span class="nb">north-district</span> schematic, Feeder <span class="nb">D-04A</span> hung brighter than its neighbors: <span class="nb">ORION-EAST</span>, the sovereign AI campus that ran the schools and clinics: four hundred twelve megawatts firm, <span class="nb">thirty-eight</span> interruptible. Schedule 1, Priority Firm. She had sat in the meeting, the winter after last year’s incident, where Legal explained that firm meant firm—no step change, up or down—and that breach meant money measured in more zeros than most towns had streetlights.</p>
 <p>She looked at <span class="nb">N-16A</span> and moved on.</p>
 <p>The EMS recommendation pane lit amber.</p>
@@ -213,7 +241,7 @@ ACK required.
 <p>49.88.</p>
 <p>The drop steepened. −0.004. The phasor needle leaned and stayed leaned. On the generation stack, a coastal unit hunted, output twitching on the governor. Units that <span class="nb">over-helped</span> tripped. Last year’s incident file had one: a cascade that almost taught the whole country what <span class="nb">black-start</span> drills were for. She watched the governor settle. Barely.</p>
 <p>“Public appeals doing anything?” she asked.</p>
-<p>“Residential down a hair. Commercial already cut what they’ll cut. Industrial interruptibles are maxed. After that, it’s Shma Yisrael.”</p>
+<p>“Residential down a hair. Commercial already cut what they’ll cut. Industrial interruptibles are maxed. After that, it’s Shma Yisrael.”<sup id="fnref:gl-shma"><a class="footnote-ref" role="doc-noteref" href="#fn:gl-shma">2</a></sup></p>
 <p>“Prayer isn’t on the contingency ladder,” Dana said. “We don’t log Shma Yisrael.”</p>
 <p>“We should,” Yuval muttered.</p>
 <p>Somewhere in the south, a battery farm’s <span class="nb">state-of-charge</span> readout flipped another percent toward empty.</p>
@@ -228,7 +256,7 @@ ACK required.
 <p>On the wall, breakers changed state. <span class="nb">N-12C</span> went dark, <span class="nb">forty-two</span> megawatts across an industrial strip nobody on television would cry about. Frequency stuttered upward a hair—49.885—then sagged again.</p>
 <p>“<span class="nb">N-12C</span> open,” North called. “<span class="nb">Forty-two</span> off.”</p>
 <p>“Copy,” Dana said, pen moving.</p>
-<p><span class="nb">N-14A</span> opened. Shopping district, two small clinics already on their own diesels if their maintenance contracts weren’t lies, a water booster station with a day tank—<span class="nb">sixty-one</span> megawatts. The sine wave lifted, fell. Someone in the back of the control room whispered <em>yalla</em> and then apologized to nobody.</p>
+<p><span class="nb">N-14A</span> opened. Shopping district, two small clinics already on their own diesels if their maintenance contracts weren’t lies, a water booster station with a day tank—<span class="nb">sixty-one</span> megawatts. The sine wave lifted, fell. Someone in the back of the control room whispered yalla<sup id="fnref:gl-yalla"><a class="footnote-ref" role="doc-noteref" href="#fn:gl-yalla">3</a></sup> and then apologized to nobody.</p>
 <p>“<span class="nb">N-14A</span> open. <span class="nb">Sixty-one</span>.”</p>
 <p>“Copy.”</p>
 <p>49.87 on the big display. The slope still negative, shallower. The deficit ribbon shivered. They needed the last bite, <span class="nb">seventy-seven</span> megawatts. The rotation table’s third line still read <span class="nb">N-16A</span>.</p>
@@ -261,12 +289,29 @@ ACK required.
 <p><em>Day 3 · Thursday</em></p>
 <p>Two evenings later the heat had got into the walls. Dana plated leftover chicken and something that had been salad yesterday, and set three places—Miriam’s still empty at the far end—because three places was what whole people did.</p>
 <p>Ido came to the table with cheap frames pushed up in his hair, one hinge cracked. He had his polite look on for adults: bored, faintly amused. She had stopped asking him to take them off.</p>
-<p>“Savta says the new nurse is stealing her cookies.” He sat down. “Only the good ones.”</p>
+<p>“Savta<sup id="fnref:gl-savta"><a class="footnote-ref" role="doc-noteref" href="#fn:gl-savta">4</a></sup> says the new nurse is stealing her cookies.” He sat down. “Only the good ones.”</p>
 <p>Dana laughed. It came out the right shape. Under the table, against her thigh, her phone showed a municipal notice from a neighborhood a few kilometers north, short, local, the kind of item that ran under real news and died by morning.</p>
 <p>An elderly resident on Rehov HaEla had been found unresponsive after the extended outage Tuesday night. Heat exposure. Name withheld pending family. The block map in the article matched <span class="nb">N-17B’s</span> footprint.</p>
 <p>Ido said something about the nurse’s shoes. She nodded in the right places. <span class="nb">N-16A</span> had stayed lit. Miriam had slept through the night—machine, cool air, wall power—while someone else’s grandmother on Rehov HaEla had not. The override was in the log under Dana’s credential, a tidy technical act nobody in the room that night had cared about.</p>
 <p>She locked the phone and set it beside her plate.</p>
 <p>“Eat,” she told her son, and smiled like a person who had nothing under the table.</p>
+<section class="notes" role="doc-endnotes" aria-label="Notes">
+<hr />
+<ol>
+<li role="doc-endnote" id="fn:gl-sharav">
+<p>Sharav: a hot, dry desert wind; here, the heat wave.&#160;<a class="footnote-backref" role="doc-backlink" href="#fnref:gl-sharav" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li role="doc-endnote" id="fn:gl-shma">
+<p>Shma Yisrael: “Hear, O Israel,” the central Jewish prayer.&#160;<a class="footnote-backref" role="doc-backlink" href="#fnref:gl-shma" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li role="doc-endnote" id="fn:gl-yalla">
+<p>Yalla: come on, let’s go.&#160;<a class="footnote-backref" role="doc-backlink" href="#fnref:gl-yalla" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li role="doc-endnote" id="fn:gl-savta">
+<p>Savta: grandmother.&#160;<a class="footnote-backref" role="doc-backlink" href="#fnref:gl-savta" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+</ol>
+</section>
       </section>
     </article>
 
